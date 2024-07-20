@@ -23,7 +23,7 @@ function App() {
         <Route path="/calender" element={<Calender />}></Route>
         <Route path="/stories" element={<Stories />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/login" element={<Contact />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Route>
     </Routes>
