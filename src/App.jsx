@@ -9,6 +9,7 @@ import Calender from "./components/calender/Calender"
 import Contact from "./components/contact/Contact"
 import Stories from "./components/stories/Stories"
 import Register from "./components/register/Register"
+import Login from "./components/login/Login";
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
         <Route path="/calender" element={<Calender />}></Route>
         <Route path="/stories" element={<Stories />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/login" element={<Contact />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Route>
     </Routes>

@@ -25,6 +25,7 @@ const Header = () => {
                 <li><NavLink style={activeLink} to={"/calender"}>Course Calender</NavLink></li>
                 <li><NavLink style={activeLink} to={"/stories"}>Stories</NavLink></li>
                 <li><NavLink style={activeLink} to={"/contact"}>Contact</NavLink></li>
+                <li><NavLink style={{width:"70px"}} className="text-decoration-none btn btn-sm btn-success" to={"/login"}>Login</NavLink></li>
                 <li><NavLink className="text-decoration-none btn btn-sm btn-primary" to={"/register"}>Register</NavLink></li>
             </ul>
           </div>
