@@ -1,0 +1,37 @@
+courseTitle: Complete Python
+courseStartDate: 23rd May 2024
+batchNo: 65
+courseDesc: Learn Python. Python is a popular programming language. Python can be used on a server to create web applications. Start learning Python now
+topics(dynamic input fields): datatypes, functions, OOPS, file handling, etc,.
+fee: 18000
+duration: 1.5 months
+classSchedule: Monday - Saturday
+classTimings: 7:30am - 9:00am IST
+trainerInfo(madhuri): pic, name, qualification, role
+schedule: live (or) coming soon
+courseSample: youtube link
+courseCoverImage: image
+
+
+courseTitle,
+courseStartDate,
+batchNo,
+courseDesc,
+courseTopics,
+courseFee,
+courseDuration, -
+classSchedule,
+courseSchedule,
+classTimings,
+courseMobileNo,
+courseSample,
+courseTrainerName,
+courseTrainerQualification,
+courseTrainerRole,
+courseCoverImage,
+courseTrainerPic,
+
+<div className="row my-2">
+    <div className="col mx-auto">
+    </div>
+</div>
