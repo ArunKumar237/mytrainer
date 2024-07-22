@@ -2,7 +2,7 @@ import React from "react";
 
 const Carousel = () => {
   return (
-    <div className="container pb-4">
+    <div className="container-md pb-4">
       <div className="row py-3">
         <div className="col">
           <div

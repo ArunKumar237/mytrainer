@@ -4,7 +4,7 @@ import "./Footer.css"
 const Footer = () => {
   return (
     <div className="footer container-fluid bg-body-secondary pt-4 mt-5 d-flex flex-column align-items-center justify-content-center gap-5">
-      <img id="logo" src="src/assets/logo.PNG" alt="" />
+      <img style={{height:"40px", objectFit:"contain"}} src="src/assets/logo.PNG" alt="" />
       <ul className="list-unstyled d-flex gap-3">
         <li><a className="text-decoration-none text-black" href="/">Home</a></li>
         <li><a className="text-decoration-none text-black" href="/about">About</a></li>

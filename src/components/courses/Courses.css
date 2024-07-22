@@ -1,0 +1,31 @@
+.title-bg{
+    position: relative;
+}
+
+.title-bg::after{
+    content: attr(data-before);
+    text-align: center;
+    color: white;
+    position: absolute;
+    border-radius: .4rem;
+    font-weight: 600;
+    right: -0.8rem;
+    width: 40%;
+    height: 1.7rem;
+    background-color: rgb(236, 169, 0);
+    border: 1px solid black;
+    border-bottom-right-radius: 0px;
+}
+
+.title-bg::before{
+    content: "";
+    position: absolute;
+    margin-top: 1.7rem;
+    width: 1rem;
+    height: 1.7rem;
+    right: -.3rem;
+    background-color: darkgoldenrod;
+    rotate: 60deg;
+    z-index: -4;
+    border: 1px solid black;
+}

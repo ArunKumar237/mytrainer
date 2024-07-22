@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/navbar/Header";
+// import Header from "./components/navbar/Header";
 import Homepage from "./components/home/Homepage";
 import About from "./components/about/About";
 import Courses from "./components/courses/Courses";
@@ -11,13 +11,14 @@ import Stories from "./components/stories/Stories";
 import Register from "./components/register/Register";
 import Login from "./components/login/Login";
 import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <Fragment>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route path="/" element={<Navbar />}>
           <Route index element={<Homepage />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/courses" element={<Courses />}></Route>
