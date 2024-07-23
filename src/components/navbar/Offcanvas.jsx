@@ -25,7 +25,7 @@ const Offcanvas = () => {
 
       <div
         className="offcanvas offcanvas-start rounded-end-3 w-75"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
       >

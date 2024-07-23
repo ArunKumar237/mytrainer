@@ -1,8 +1,8 @@
 import React from "react";
 
-const Sectionbreak = () => {
+const Sectionbreak = (props) => {
   return (
-    <div className="container">
+    <div className={`${props.classname} container`}>
       <div className="row d-flex align-items-center">
         <div className="col">
           <hr />
