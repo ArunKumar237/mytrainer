@@ -10,8 +10,9 @@
     border-radius: .4rem;
     font-weight: 600;
     right: -0.8rem;
-    width: 40%;
+    width: 20rem;
     height: 1.7rem;
+    font-size: 1rem;
     background-color: rgb(236, 169, 0);
     border: 1px solid black;
     border-bottom-right-radius: 0px;
