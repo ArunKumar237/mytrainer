@@ -4,7 +4,7 @@ import "./Course.css";
 
 const Course = (props) => {
   return (
-    <div style={{ height: '100vh' }} className={`${props.classname} my-4`}>
+    <div style={{ height: '100%' }} className={`${props.classname} my-4`}>
       <div className="container h-md-50 h-lg-75">
         <div className="row h-100">
           <div className="col-md-3 col-lg-2 d-flex justify-content-center h-100">
@@ -15,14 +15,14 @@ const Course = (props) => {
               alt=""
             />
           </div>
-          <div className="col-md-9 col-lg-10 d-flex flex-column gap-1 bg-white">
+          <div className="col-md-9 col-lg-10 d-flex flex-column gap-1 bg-white border border-1 rounded pb-1">
             <div style={{ height: "3rem", background: "linear-gradient(90deg, rgba(0,99,255,1) 0%, rgba(35,171,80,1) 100%)" }} className="row rounded-top title-bg d-flex align-items-center" data-before={"Next batch - 23rd May 2024, Batch-65"}>
               <h5 className="ps-5 text-white">{props.courseTitle}</h5>
             </div>
             <div className="row d-flex mx-auto justify-content-center">
               <div className="col-11 p-0">
-                <div className="row gap-md-2 justify-content-lg-between">
-                  <div style={{ fontSize: ".9rem" }} className="col-8 p-0">
+                <div className="row gap-md-2 justify-content-lg-between align-items-center">
+                  <div style={{ fontSize: ".9rem" }} className="col-8 py-0 px-1">
                     {props.courseDesc}
                   </div>
                   <div className="col-2 text-center p-0 me-lg-3">

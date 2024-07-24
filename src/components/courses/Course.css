@@ -16,6 +16,7 @@
     background-color: rgb(236, 169, 0);
     border: 1px solid black;
     border-bottom-right-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.361);
 }
 
 .title-bg::before{
