@@ -1,0 +1,33 @@
+.tile{
+    background-color: rgb(255 149 24);
+}
+
+@media screen and (max-width: 575.98px) {
+    .tile{
+        height: 18rem;
+        width: 18rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.95px){
+    .tile{
+        height: 15.6rem;
+        width: 15.6rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tile{
+        height: 18rem;
+        width: 18rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

@@ -1,27 +1,21 @@
 import React from "react";
+import './Tile.css'
 
 const Tile = (props) => {
   return (
-    <div className="col-3">
-      <div className="row gx-1">
-        <div
-          style={{ height: "300px", backgroundColor: "rgb(255 149 24)" }}
-          className="d-flex flex-column col rounded-3 justify-content-center align-items-center pt-5 px-4"
-        >
-          <div
-            style={{ height: "35px", width: "35px" }}
-            className="d-flex flex-column col-1 mb-4"
-          >
-            <img
-              width="35"
-              src= {props.src}
-              alt="live-video-on--v1"
-            />
-          </div>
-          <div className="col text-center">
-            <h6 className="fw-bold">{props.heading}</h6>
-            <p>{props.para}</p>
-          </div>
+    <div className="d-flex justify-content-center">
+      <div
+        className="tile rounded-3 shadow border border-1 d-flex flex-column p-3 align-items-center gap-3"
+      >
+          <img
+            width="35px"
+            src={props.src}
+            className="pt-4"
+          />
+          
+        <div className="col text-center">
+          <h6 className="fw-bold">{props.heading}</h6>
+          <p>{props.para}</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,25 @@
+hr{
+    width: 40%;
+}
+/* className="pt-1 mt-2 fs-4" */
+@media screen and (max-width: 575.98px) {
+    #break p{
+        font-size: 1rem;
+        padding-top: 0.7rem;
+        /* margin-top: 1rem; */
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.95px){
+    #break p{
+        font-size: 1.2rem;
+        padding-top: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #break p{
+        font-size: 1.4rem;
+        padding-top: 0.7rem;
+    }
+}

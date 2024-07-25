@@ -30,7 +30,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <Footer/>
+    {/* <Footer/> */}
     </Fragment>
   );
 }

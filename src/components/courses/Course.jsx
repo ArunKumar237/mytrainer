@@ -1,5 +1,6 @@
 import React from 'react'
 import Stars from "../home/coursesoffering/Stars";
+import Sectionbreak from "../home/Sectionbreak"
 import "./Course.css";
 
 const Course = (props) => {
@@ -9,13 +10,13 @@ const Course = (props) => {
         <div className="row h-100">
           <div className="col-md-3 col-lg-2 d-flex justify-content-center h-100">
             <img
+            id='posterImg'
               className="rounded-3"
-              style={{ height: '75%' }}
               src={props.posterImgSrc}
               alt=""
             />
           </div>
-          <div className="col-md-9 col-lg-10 d-flex flex-column gap-1 bg-white border border-1 rounded pb-1">
+          <div className="col-md-9 col-lg-10 ms-md-auto d-flex flex-column gap-1 bg-white border border-1 rounded pb-1">
             <div style={{ height: "3rem", background: "linear-gradient(90deg, rgba(0,99,255,1) 0%, rgba(35,171,80,1) 100%)" }} className="row rounded-top title-bg d-flex align-items-center" data-before={"Next batch - 23rd May 2024, Batch-65"}>
               <h5 className="ps-5 text-white">{props.courseTitle}</h5>
             </div>
@@ -85,6 +86,7 @@ const Course = (props) => {
           </div>
         </div>
       </div>
+      <Sectionbreak/>
     </div>
   )
 }

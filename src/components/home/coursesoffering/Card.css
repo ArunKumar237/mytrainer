@@ -1,0 +1,27 @@
+#card{
+    width: 17rem;
+}
+#card img{
+    height: 20rem;
+    width: 17rem;
+}
+
+/* @media screen and (max-width: 575.98px) {
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.95px){
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    p{
+        font-size: 1rem;
+    }
+} */
+
+

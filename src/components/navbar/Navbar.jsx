@@ -8,7 +8,6 @@ const Navbar = () => {
     return {
       color: isActive ? "blue" : "inherit",
       textDecoration: isActive ? "underline" : "none",
-      fontSize: "14px",
     };
   };
   return (
@@ -17,7 +16,7 @@ const Navbar = () => {
         <div className="container-md">
           <a className="navbar-brand ms-md-4" href="#">
             <img
-              style={{ height: "40px" }}
+              style={{ height: "2.5rem" }}
               id="logo"
               src="src/assets/logo.PNG"
               alt=""
@@ -25,7 +24,7 @@ const Navbar = () => {
           </a>
           <Offcanvas />
           <div className="d-none d-lg-flex col-8 h-100 d-flex align-items-center justify-content-end">
-            <ul className="d-flex list-unstyled gap-md-4 my-0 me-3 align-items-center fw-medium">
+            <ul className="d-flex list-unstyled gap-md-3 my-0 me-3 align-items-center fw-medium">
                 <li><NavLink style={activeLink} to={"/"}>Home</NavLink></li>
                 <li><NavLink style={activeLink} to={"/about"}>About</NavLink></li>
                 <li><NavLink style={activeLink} to={"/courses"}>Courses&nbsp;Offering</NavLink></li>

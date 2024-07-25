@@ -1,18 +1,24 @@
 @media screen and (max-width: 575.98px) {
-    .carousel-item img{
+    #carouselExample .carousel-item img{
         height: 10rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.95px){
-    .carousel-item img{
+    #carouselExample .carousel-item img{
         height: 30rem;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .carousel-item img{
-        height: 17rem;
+    #carouselExample .carousel-item img{
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #carouselExample .carousel-item img{
+        height: 25rem;
     }
 }
 

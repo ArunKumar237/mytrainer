@@ -1,16 +1,13 @@
 import React from "react";
+import './Sectionbreak.css'
 
 const Sectionbreak = (props) => {
   return (
-    <div className={`${props.classname} container`}>
-      <div className="row d-flex align-items-center">
-        <div className="col">
+    <div className="container">
+      <div className="row">
+        <div id='break' className="col d-flex gap-2 justify-content-center align-items-center">
           <hr />
-        </div>
-        <div className="col-1 fs-4 text-center">
-          <p className="mt-2" >:: :: :: ::</p>
-        </div>
-        <div className="col">
+          <p>:: :: :: ::</p>
           <hr />
         </div>
       </div>

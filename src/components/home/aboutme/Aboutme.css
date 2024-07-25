@@ -1,0 +1,31 @@
+@media screen and (max-width: 575.98px) {
+    #profileImg{
+        height: 10rem;
+        width: 10rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.95px){
+    #profileImg{
+        height: 30rem;
+        width: 30rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #profileImg{
+        height: 20rem;
+        width: 20rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+
