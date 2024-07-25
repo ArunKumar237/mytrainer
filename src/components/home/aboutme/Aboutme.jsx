@@ -42,9 +42,9 @@ const Aboutme = () => {
             consectetur et laborum a blanditiis maxime omnis vel possimus rem
             fugiat perferendis, dolorem voluptatibus sint itaque ratione illo
             aut? Modi voluptatem et deleniti.
-            <div>
-              <p className="btn btn-primary btn-sm">More details &nbsp;➜</p>
-            </div>
+            <span className="d-inline-flex align-items-baseline">
+              <p className="btn btn-primary btn-sm ms-2">More details &nbsp;➜</p>
+            </span>
           </p>
 
         </div>
