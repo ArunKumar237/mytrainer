@@ -1,0 +1,48 @@
+table, th, td {
+    border: 1px solid rgb(147, 147, 147);
+    border-collapse: collapse;
+}
+th,td{
+    white-space: nowrap;
+    font-size: .8rem;
+}
+table{
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+}
+table p{
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 575.98px) {
+    table img{
+        margin-top: .2rem;
+        height: 1.8rem;
+        width: 1.8rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.95px){
+    table img{
+        margin-top: .2rem;
+        height: 1.8rem;
+        width: 1.8rem;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    td,th{
+        font-size: .9rem;
+    }
+    table p{
+        font-size: .9rem;
+    }
+    table img{
+        margin-top: .2rem;
+        height: 1.8rem;
+        width: 1.8rem;
+        object-fit: cover;
+    }
+}

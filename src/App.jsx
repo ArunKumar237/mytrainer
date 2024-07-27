@@ -4,7 +4,7 @@ import "./App.css";
 // import Header from "./components/navbar/Header";
 import Homepage from "./components/home/Homepage";
 import About from "./components/about/About";
-import Courses from "./components/courses/Courses";
+import Courses from "./components/coursesoffering/Courses";
 import Calender from "./components/calender/Calender";
 import Contact from "./components/contact/Contact";
 import Stories from "./components/stories/Stories";
