@@ -8,29 +8,18 @@ th,td{
 }
 table{
     border-radius: 8px 8px 0px 0px;
-    overflow: hidden;
 }
 table p{
     font-size: .8rem;
 }
 
-@media screen and (max-width: 575.98px) {
-    table img{
-        margin-top: .2rem;
-        height: 1.8rem;
-        width: 1.8rem;
-        object-fit: cover;
-    }
+table img{
+    margin-top: .2rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    object-fit: cover;
 }
 
-@media screen and (min-width: 576px) and (max-width: 767.95px){
-    table img{
-        margin-top: .2rem;
-        height: 1.8rem;
-        width: 1.8rem;
-        object-fit: cover;
-    }
-}
 
 @media screen and (min-width: 768px) {
     td,th{
@@ -39,10 +28,5 @@ table p{
     table p{
         font-size: .9rem;
     }
-    table img{
-        margin-top: .2rem;
-        height: 1.8rem;
-        width: 1.8rem;
-        object-fit: cover;
-    }
+    
 }
