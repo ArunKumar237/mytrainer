@@ -6,7 +6,7 @@ const Specialities = () => {
     <div className="container py-4 d-flex flex-column gap-3">
       <div className="d-flex flex-column align-items-center justify-content-center">
         <h2>Course Specialities</h2>
-        <p style={{fontSize:"1rem"}}>
+        <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
           veritatis tempore temporibus. Illo voluptatum magni repellendus
         </p>

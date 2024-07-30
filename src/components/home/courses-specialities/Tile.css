@@ -7,7 +7,7 @@
         height: 18rem;
         width: 18rem;
     }
-    p{
+    #para{
         font-size: 1rem;
     }
 }
@@ -17,8 +17,8 @@
         height: 15.6rem;
         width: 15.6rem;
     }
-    p{
-        font-size: 1rem;
+    #para{
+        font-size: .9rem;
     }
 }
 
@@ -27,7 +27,7 @@
         height: 18rem;
         width: 18rem;
     }
-    p{
-        font-size: 1rem;
+    #para{
+        font-size: .9rem;
     }
 }

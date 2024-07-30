@@ -1,121 +1,71 @@
-import React, { useEffect, useState } from 'react'
-import './Calendersub.css'
+<div>
+      <div className="container">
+        <div className="row d-flex gap-3 justify-content-center">
+
+          <div className="col-3 rounded py-4 border border-1 d-flex flex-column align-items-center">
+            <div className="row text-center py-4">
+              <div id='profile' className="col">
+                <img style={{ height: "12rem", width: "12rem" }} className="rounded-circle object-fit-cover" src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
+                <p className='m-0 fw-semibold'>Chaitanya Reddy</p>
+                <p className='m-0 fw-bold'>Python Instructor</p>
+              </div>
+            </div>
+            <div id='profile-info' className="row c border border-1 w-75 rounded d-flex flex-column align-items-center">
+              <p className='m-0 fw-bold lh-lg'>Age: 40</p>
+              <p className='m-0 fw-bold lh-lg'>Qualification: Mtech</p>
+              <p className='m-0 fw-bold lh-lg'>IT Experience: 20+ yrs</p>
+              <p className='m-0 fw-bold lh-lg'>Training Experience: 10+yrs</p>
+              <div>
+                <p className='m-0 fw-bold lh-lg'>Rating</p>
+                <p className='m-0'>stars</p>
+              </div>
+              <div className='d-flex flex-column gap-2 '>
+                <p className='m-0 align-self-start text-white fw-medium bg-primary rounded-1 p-2'>Complete Python</p>
+                <p className='m-0 align-self-start text-white fw-medium bg-primary rounded-1 p-2'>Python Fullstack</p>
+                <p className='m-0 align-self-start text-white fw-medium bg-primary rounded-1 p-2'>Frontend Technologies</p>
+                <p className='m-0 align-self-start text-white fw-medium bg-primary rounded-1 p-2'>Data Science</p>
+              </div>
+            </div>
+          </div>
 
 
-const Calendersub = (props) => {
-  const [tabledata, settable] = useState([])
 
-  useEffect(() => {
-    if (Array.isArray(props.table)) {
-      settable(props.table)
-    }
-  }, [props.table])
-
-  // sorting date
-  const sortDate = (e) => {
-    const column = e.target.getAttribute('data-column')
-    const order = e.target.getAttribute('data-order')
-
-    const sorted = [...tabledata].sort((a, b) => {
-      const dateA = new Date(a[column]);
-      const dateB = new Date(b[column]);
-
-      // Handle comparison based on the desired order
-      if (order === 'asc') {
-        e.target.setAttribute('data-order', 'desc')
-        return dateA - dateB
-      } else {
-        e.target.setAttribute('data-order', 'asc')
-        return dateB - dateA
-      }
-    })
-    settable(sorted)
-  }
-
-  //sortNumbers
-  const sortNum = (e) => {
-    const column = e.target.getAttribute('data-column')
-    const order = e.target.getAttribute('data-order')
-
-    const sorted = [...tabledata].sort((a, b) => {
-      // Convert string numbers to actual numbers if necessary
-      const numberA = typeof a[column] === 'string' && !isNaN(a[column]) ? parseFloat(a[column]) : a[column];
-      const numberB = typeof b[column] === 'string' && !isNaN(b[column]) ? parseFloat(b[column]) : b[column];
-
-      if (order === 'asc') {
-        e.target.setAttribute('data-order', 'desc')
-        return numberA - numberB
-      } else {
-        e.target.setAttribute('data-order', 'asc')
-        return numberB - numberA
-      }
-    })
-    settable(sorted)
-  }
-
-  //sorting string
-  const sortStr = (e) => {
-    const column = e.target.getAttribute('data-column')
-    const order = e.target.getAttribute('data-order')
-
-    const sorted = [...tabledata].sort((a, b) => {
-      if (order === 'asc') {
-        e.target.setAttribute('data-order', 'desc')
-        return a[column].localeCompare(b[column])
-      } else {
-        e.target.setAttribute('data-order', 'asc')
-        return b[column].localeCompare(a[column])
-      }
-    })
-    settable(sorted)
-  }
-
-  return (
-    <div className='container my-4'>
-      <h5>{props.course}:<span><img style={{ height: "2rem" }} src="https://img.icons8.com/matisse/100/000000/pdf.png" alt="" /></span></h5>
-      <div className='rounded-top-3 border border-1 overflow-x-auto'>
-        <table className="table table-hover table-bordered m-0 text-center">
-          <thead>
-            <tr>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortDate} data-column="courseStartDate" data-order="desc" scope="col">Starts On</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortNum} data-column="courseDuration" data-order="desc" scope="col">Duration</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortNum} data-column="Class Time" data-order="desc" scope="col">Class Time</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortNum} data-column="Class Days" data-order="desc" scope="col">Class Days</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortStr} data-column="courseTrainerName" data-order="desc" scope="col">Trainer</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortNum} data-column="batchNo" data-order="desc" scope="col">Batch #</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortNum} data-column="courseFee" data-order="desc" scope="col">Fee</th>
-              <th style={{ cursor: "pointer", userSelect: "none" }} className='bg-warning' onClick={sortNum} data-column="Actions" data-order="desc" scope="col">Actions</th>
-            </tr>
-          </thead>
-          <tbody id="myTable">
-            {tabledata.map((rowdata, index) => (
-              <tr key={index}>
-                <td>{rowdata.courseStartDate}</td>
-                <td>{rowdata.courseDuration}</td>
-                <td>{rowdata.classTimingsFrom} to {rowdata.classTimingsTo}</td>
-                <td>{rowdata.classScheduleFrom} to {rowdata.classScheduleTo}</td>
-                {/* <td>{rowdata.courseTrainerName}</td> */}
-                <td className='d-flex'>
-                  <div className="d-flex gap-2 p-0 m-0">
-                    <img className="rounded-circle" src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
-                    <div className="col d-flex flex-column align-items-start m-0 p-0">
-                      <p className='m-0 p-0 lh-md w-auto text-decoration-underline'>{rowdata.courseTrainerName}</p>
-                      <p className='m-0 p-0 lh-md w-auto fw-bold'>{rowdata.trainerQuali}</p>
-                      <p className='m-0 p-0 lh-md w-auto'>{rowdata.trainerRole}</p>
-                    </div>
-
+          <div className="col-5 rounded p-4 d-flex flex-column gap-3 border border-1">
+            <div className="row">
+              <div id='bio' className="col bg-danger-subtle">
+                <p className='fw-semibold'>Bio</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugit autem alias rem dolor quibusdam vel totam. Quod nemo vero odit laborum nihil eaque accusantium. Recusandae quibusdam illum laudantium hic dolorem voluptates necessitatibus cumque fugiat adipisci ut, distinctio consectetur provident ratione quisquam tempore quos earum omnis soluta aspernatur dolorum itaque suscipit ab quidem. Expedita provident eveniet fuga incidunt, recusandae ad? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam amet enim reprehenderit maxime cumque, perspiciatis dolor sit. Ex, distinctio in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, impedit. Iusto tempora quis id tenetur, aliquam ipsa a harum excepturi.</p>
+              </div>
+            </div>
+            <div className="row">
+              <div id='education' className="col bg-danger-subtle">
+                <p className='fw-semibold'>Educational Cerificates</p>
+                <p className='m-0'>Btech: from Andhra University</p>
+                <p className='m-0'>Mtech: from IIT Roorkee</p>
+              </div>
+            </div>
+            <div className="row">
+              <div id='training' className="col bg-danger-subtle">
+                <p className='fw-semibold'>Educational Cerificates</p>
+                <div style={{ height: "11rem" }} className="row gap-1">
+                  <div className="col bg-primary d-flex flex-column align-items-center justify-content-center gap-3">
+                    <p className='fw-bold m-0'>Batch</p>
+                    <p className='fw-bold m-0'>64</p>
                   </div>
-                </td>
-                <td>{rowdata.batchNo}</td>
-                <td>{rowdata.courseFee}</td>
-                <td><div className="btn btn-sm btn-primary">Register</div></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                  <div className="col bg-primary-subtle d-flex flex-column align-items-center justify-content-center gap-3">
+                    <p className='fw-bold m-0'>Students</p>
+                    <p className='fw-bold m-0'>1245</p>
+                  </div>
+                  <div className="col bg-warning d-flex flex-column align-items-center justify-content-center gap-3">
+                    <p className='fw-bold m-0'>Weekly Tests</p>
+                    <p className='fw-bold m-0'>10901</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-3 bg-danger-subtle rounded border border-1"></div>
+        </div>
       </div>
     </div>
-  )
-}
 
-export default Calendersub

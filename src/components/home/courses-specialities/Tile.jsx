@@ -15,7 +15,7 @@ const Tile = (props) => {
           
         <div className="col text-center">
           <h6 className="fw-bold">{props.heading}</h6>
-          <p>{props.para}</p>
+          <p id="para">{props.para}</p>
         </div>
       </div>
     </div>

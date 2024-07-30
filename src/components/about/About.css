@@ -1,0 +1,36 @@
+@media screen and (max-width: 575.98px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.95px){
+
+}
+
+@media screen and (min-width: 768px) {
+    #profile p:first-of-type{
+        font-size: 1.2rem;
+    }
+    #profile p:nth-of-type(2){
+        font-size: .8rem;
+        color: #828282;
+    }
+    #profile-info p{
+        font-size: .9rem;
+    }
+    #bio p:first-of-type{
+        font-size: 1.2rem;
+    }
+    #bio p:nth-of-type(2){
+        line-height: 1.6rem;
+        font-size: .9rem;
+    }
+    #education p:nth-of-type(2), #education p:nth-of-type(3){
+        font-size: .9rem;
+    }
+    .trackrecord div p{
+        font-size: .8rem;
+    }
+    
+}
+
+
