@@ -1,0 +1,13 @@
+.banner{
+    height: 17rem;
+    background: linear-gradient(45deg, rgba(7,86,219,1) 0%, rgba(17,130,139,1) 50%, rgba(28,195,53,1) 100%);
+}
+.contactDiv{
+    width: 36rem;
+    height: 5rem;
+}
+.contactDiv img{
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
