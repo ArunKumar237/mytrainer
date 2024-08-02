@@ -5,8 +5,8 @@ import "./Coursesmob.css"
 const Coursesmob = (props) => {
     return (
         <div className={`${props.classname}  align-items-center justify-content-center gap-3 my-5`}>
-            <div style={{ height: "25rem", width: "19rem" }} className="container p-0 d-flex justify-content-center">
-                <div style={{ height: "25rem", width: "19rem" }} className='infocard overflow-hidden rounded-3 border border-1 border-black shadow-lg'>
+            <div style={{ height: "26rem", width: "19rem" }} className="container p-0 d-flex justify-content-center">
+                <div style={{ height: "26rem", width: "19rem" }} className='infocard overflow-hidden rounded-3 border border-1 border-black shadow-lg'>
                     <div style={{ height: "12rem", width: "20.4rem" }} className="row overflow-hidden">
                         <img style={{ width: "100%" }} className="rounded-3 object-fit-cover" src={props.posterImgSrc} alt="" />
                     </div>
@@ -68,7 +68,7 @@ const Coursesmob = (props) => {
                     </div>
 
                     <div className="row">
-                        <p style={{ backgroundColor: "#23ab50" }} className="py-1 text-white text-center">Click to Register</p>
+                        <p style={{ backgroundColor: "#23ab50" }} className="py-3 text-white text-center">Click to Register</p>
                     </div>
                 </div>
                 <div className='row price-ribbon m-0' data-before={`₹${props.coursePrice}/-`}>

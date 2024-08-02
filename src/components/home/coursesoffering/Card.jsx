@@ -8,9 +8,9 @@ const Card = (props) => {
       <img className="object-fit-fill" src={props.img} alt="" />
       <div className="px-3 py-2">
         <div className="d-flex flex-column">
-          <p className="m-0 fw-bold">{props.courseName}</p>
-          <p className="m-0 fw-medium">{props.trainerName}</p>
-          <p className="m-0 fw-normal">{props.trainerQuali}</p>
+          <p id="courseTitle" className="m-0 fw-bold">{props.courseName}</p>
+          <p id="courseName" className="m-0 fw-medium">{props.trainerName}</p>
+          <p id="trainerQuali" className="m-0 fw-normal">{props.trainerQuali}</p>
         </div>
         <Stars />
         <div className="btn btn-warning btn-sm mt-2 mb-2">More details..</div>

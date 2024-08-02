@@ -40,83 +40,96 @@ const Stories = () => {
     <div className='container-md'>
       {data.map((row) => (
         <div key={row.id} className='my-4'>
-          <div className="row justify-content-center py-2">
-            <div className="col-2 text-center">
+          <div className="row py-2">
+            <div className="d-none d-md-block col-md-3 p-0 text-center">
               <img id='profile-pic' className='rounded-circle object-fit-cover' src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
             </div>
-            {
-              row.post.includes("https://youtu.be/") && (
-                <div className="col-9">
-                  <div style={{ backgroundColor: "#a4ffa4" }} className='rounded p-3'>
-                    <div className='rounded overflow-hidden border-black mx-auto'>
-                      <iframe className='rounded' style={{ height: "25.5rem", width: "100%" }} src={row.post.replace("https://youtu.be/", "https://www.youtube.com/embed/")} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    </div>
-                    <h3 className='my-1'>{row.trainerName}</h3>
-                    <div className='d-flex gap-3'>
-                      <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Country: {row.country}</p>
-                      <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>State: {row.state}</p>
-                      <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Batch Number: {row.batchNo}</p>
-                      <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Course Name: {row.courseName}</p>
-                    </div>
-                    <div className='d-flex gap-1 align-items-center'>
-                      <span>4&nbsp;</span>
-                      <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                      <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                      <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                      <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              )}
-            {
-              !row.post.includes("https://youtu.be/") && (
-                row.post.match(/\.(jpeg|jpg|gif|png|webp)$/i) ? (
-                  <div className="col-9">
+            <div className="col-11 mx-auto col-md-9 p-0">
+              {
+                row.post.includes("https://youtu.be/") && (
+                  <div className="col">
                     <div style={{ backgroundColor: "#a4ffa4" }} className='rounded p-3'>
-                      <div className='rounded overflow-hidden border-black mx-auto'>
-                        <img style={{height:"20rem"}} src={row.post} alt="" />
+                      <div className='rounded overflow-hidden'>
+                        <iframe className='rounded embedFrame' src={row.post.replace("https://youtu.be/", "https://www.youtube.com/embed/")} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                       </div>
-                      <h3 className='my-1'>{row.trainerName}</h3>
-                      <div className='d-flex gap-3'>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Country: {row.country}</p>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>State: {row.state}</p>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Batch Number: {row.batchNo}</p>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Course Name: {row.courseName}</p>
+                      <div className="d-flex my-2 my-md-0">
+                        <img className='smallImg d-block d-md-none me-2 rounded-circle object-fit-cover' src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
+                        <h3 className='my-1'>{row.trainerName}</h3>
                       </div>
-                      <div className='d-flex gap-1 align-items-center'>
-                        <span>4&nbsp;</span>
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                      <div className='d-flex mt-2 flex-wrap gap-1 m-0 flex-md-row '>
+                        <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Country: {row.country}</p>
+                        <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>State: {row.state}</p>
+                        <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Batch Number: {row.batchNo}</p>
+                        <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Course Name: {row.courseName}</p>
                       </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="col-9">
-                    <div style={{ backgroundColor: "#a4ffa4" }} className='rounded p-3'>
-                      <div className='rounded overflow-hidden border-black mx-auto'>
-                        <p><q>{row.post}</q></p>
-                      </div>
-                      <h3 className='my-1'>{row.trainerName}</h3>
-                      <div className='d-flex gap-3'>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Country: {row.country}</p>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>State: {row.state}</p>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Batch Number: {row.batchNo}</p>
-                        <p style={{ fontSize: ".8rem" }} className='py-1 my-2 px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Course Name: {row.courseName}</p>
-                      </div>
-                      <div className='d-flex gap-1 align-items-center'>
-                        <span>4&nbsp;</span>
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
-                        <img style={{ height: "1rem" }} src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                      <div className='d-flex align-items-center gap-1'>
+                        <p className="ratingNum">4</p>
+                        <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                        <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                        <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                        <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
                       </div>
                     </div>
                   </div>
+                )}
+              {
+                !row.post.includes("https://youtu.be/") && (
+                  row.post.match(/\.(jpeg|jpg|gif|png|webp)$/i) ? (
+                    <div className="col">
+                      <div style={{ backgroundColor: "#a4ffa4" }} className='rounded p-3'>
+                        <div className='rounded overflow-hidden mx-auto'>
+                          <img style={{width:"100%"}} className='object-fit-contain' src={row.post} alt="" />
+                        </div>
+                        <div className="d-flex my-2 my-md-0">
+                          <img className='smallImg d-block d-md-none me-2 rounded-circle object-fit-cover' src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
+                          <h3 className='my-1'>{row.trainerName}</h3>
+                        </div>
+                        <div className='d-flex mt-2 flex-wrap gap-1 m-0 flex-md-row '>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Country: {row.country}</p>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>State: {row.state}</p>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Batch Number: {row.batchNo}</p>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Course Name: {row.courseName}</p>
+                        </div>
+                        <div className='d-flex align-items-center gap-1'>
+
+                          <p className="ratingNum">4</p>
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="col">
+                      <div style={{ backgroundColor: "#a4ffa4" }} className='rounded p-3'>
+                        <div className='rounded overflow-hidden mx-auto'>
+                          <p>{row.post}</p>
+                        </div>
+                        <div className="d-flex my-2 my-md-0">
+                          <img className='smallImg d-block d-md-none me-2 rounded-circle object-fit-cover' src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
+                          <h3 className='my-1'>{row.trainerName}</h3>
+                        </div>
+                        <div className='d-flex mt-2 flex-wrap gap-1 flex-md-row '>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Country: {row.country}</p>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>State: {row.state}</p>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Batch Number: {row.batchNo}</p>
+                          <p className='info py-1 my-0  px-2 text-warning border border-1 rounded bg-white fw-medium border-warning'>Course Name: {row.courseName}</p>
+                        </div>
+                        <div className='d-flex align-items-center gap-1'>
+
+                          <p className="ratingNum">4</p>
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                          <img className='blackstarsize' src="https://img.icons8.com/plumpy/24/filled-star.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  )
                 )
-              )
-            }
+              }
+            </div>
           </div>
         </div>
       ))}

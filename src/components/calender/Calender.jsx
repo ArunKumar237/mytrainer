@@ -13,7 +13,7 @@ const data = [
     "classScheduleTo": "tue",
     "classTimingsFrom": "11:11",
     "classTimingsTo": "02:22",
-    "courseTrainerName": "chai",
+    "courseTrainerName": "sriram",
     "trainerQuali":"b.tech",
     "trainerRole":"data scientist"
   },

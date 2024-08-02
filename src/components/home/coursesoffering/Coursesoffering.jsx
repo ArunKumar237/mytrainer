@@ -15,25 +15,25 @@ const Coursesoffering = () => {
         <Card 
         img={"https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360"}
         courseName = "Full Stack Python"
-        trainerName = "D. Chaitanya Reddy"
+        trainerName = "Arun Kumar"
         trainerQuali = "Data scientist"
         />
         <Card 
         img={"https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360"}
         courseName = "Full Stack Python"
-        trainerName = "D. Chaitanya Reddy"
+        trainerName = "Arun Kumar"
         trainerQuali = "Data scientist"
         />
         <Card 
         img={"https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360"}
         courseName = "Full Stack Python"
-        trainerName = "D. Chaitanya Reddy"
+        trainerName = "Arun Kumar"
         trainerQuali = "Data scientist"
         />
         <Card 
         img={"https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360"}
         courseName = "Full Stack Python"
-        trainerName = "D. Chaitanya Reddy"
+        trainerName = "Arun Kumar"
         trainerQuali = "Data scientist"
         />
       </div>

@@ -1,5 +1,67 @@
-#profile-pic{
-    width: 11rem;
-    height: 11rem;
-    object-position: top;
+.blackstarsize{
+    height: 1rem;
+}
+.ratingNum{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.info{
+    font-size: 1rem;
+}
+.embedFrame{
+    height: 22.5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 575.98px) {
+    #profile-pic{
+        width: 8rem;
+        height: 8rem;
+        object-position: top;
+    }
+    .info{
+        font-size: .8rem;
+    }
+    .smallImg{
+        height: 2rem;
+        width: 2rem;
+    }
+    .embedFrame{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    #profile-pic{
+        width: 8rem;
+        height: 8rem;
+        object-position: top;
+    }
+    .info{
+        font-size: .8rem;
+    }
+    .smallImg{
+        height: 2rem;
+        width: 2rem;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    #profile-pic{
+        width: 8rem;
+        height: 8rem;
+        object-position: top;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    #profile-pic{
+        width: 10rem;
+        height: 10rem;
+        object-position: top;
+    }
+    
 }

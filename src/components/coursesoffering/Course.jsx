@@ -37,11 +37,11 @@ const Course = (props) => {
             <div className="row">
               <div className="col-11 mx-auto">
                 <div style={{ backgroundColor: "#e5e5e5" }} className="row rounded p-md-2 p-lg-4 ">
-                  <div className="col-lg-6 col-md-5 text-md-center text-lg-start">
+                  <div className="col-lg-6 col-md-5 text-md-center text-lg-start d-flex flex-column gap-lg-4">
                     <div className="row">
                       <div className="col d-flex flex-md-column flex-lg-row gap-2 gap-md-0  align-items-md-center align-items-lg-start">
-                        <p className="fw-semibold mb-md-0 me-lg-2">Trainer:</p>
-                        <div className="d-flex gap-lg-1 gap-md-3 align-items-lg-start align-items-md-center">
+                        <p className="fw-semibold mb-md-0 me-lg-3">Trainer:</p>
+                        <div className="d-flex gap-lg-3 gap-md-3 align-items-lg-start align-items-md-center">
                           <img style={{ height: "1.875rem", width: "1.875rem" }} className="rounded-circle" src={props.trainerPic} alt="" />
                           <div className="col d-flex flex-column gap-lg-1 gap-md-0 mt-1 p-0">
                             <p style={{ fontSize: "0.875rem" }} className="m-0 text-decoration-underline">{props.trainerName}</p>
@@ -51,7 +51,7 @@ const Course = (props) => {
                         </div>
                       </div>
                     </div>
-                    <div className="row d-flex gap-1 flex-column">
+                    <div className="row d-flex gap-lg-2 gap-1 flex-column">
                       <Stars />
                       <p style={{ fontSize: "0.875rem" }} className="fw-bold m-0">Schedule: {props.courseSchedule}</p>
                     </div>

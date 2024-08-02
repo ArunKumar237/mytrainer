@@ -1,9 +1,10 @@
 import React from "react";
+import './Stars.css'
 
 const Stars = () => {
   return (
-    <div className="d-flex gap-2">
-      <p style={{fontSize:"14px"}} className="m-0">4.2</p>
+    <div className="d-flex gap-2 starsize">
+      <p className="m-0">4.2</p>
       <div className="d-flex gap-1 m-0">
         <svg
           width="15"
@@ -62,7 +63,7 @@ const Stars = () => {
           />
         </svg>
       </div>
-      <p style={{fontSize:"14px"}} className="m-0">(783422)</p>
+      <p className="m-0">(783422)</p>
     </div>
   );
 };

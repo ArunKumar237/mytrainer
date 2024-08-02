@@ -10,7 +10,7 @@ const About = () => {
           <div className="row text-center mt-2">
             <div id='profile' className="col">
               <img style={{ height: "12rem", width: "12rem" }} className="rounded-circle object-fit-cover" src="https://img.freepik.com/free-photo/lions-digital-art-style_23-2150977775.jpg?t=st=1721479693~exp=1721483293~hmac=8dd1f8a39a6591fcf753d0619c87b7aa1c7657d70a940bb5673192ba46ade4dd&w=360" alt="" />
-              <p className='m-0 fw-semibold'>Chaitanya Reddy</p>
+              <p className='m-0 fw-semibold'>Arun Kumar</p>
               <p className='m-0 fw-bold'>Python Instructor</p>
             </div>
           </div>
@@ -23,10 +23,10 @@ const About = () => {
           </div>
           <div style={{backgroundColor:"#f8d7da7d"}} id='profile-info' className="row w-100 rounded px-1 py-3">
             <div>
-              <p className='m-0 fw-bold lh-lg mb-1'>Age: 40</p>
-              <p className='m-0 fw-bold lh-lg mb-1'>Qualification: Mtech</p>
-              <p className='m-0 fw-bold lh-lg mb-1'>IT Experience: 20+ yrs</p>
-              <p className='m-0 fw-bold lh-lg mb-1'>Training Experience: 10+yrs</p>
+              <p className='m-0 fw-bold lh-lg mb-1'>Age: 28</p>
+              <p className='m-0 fw-bold lh-lg mb-1'>Qualification: Btech</p>
+              <p className='m-0 fw-bold lh-lg mb-1'>IT Experience: 2+ yrs</p>
+              <p className='m-0 fw-bold lh-lg mb-1'>Training Experience: 1+yrs</p>
             </div>
             <div className='d-flex align-items-baseline gap-2 mb-1'>
               <p className='m-0 fw-bold lh-lg'>Rating</p>

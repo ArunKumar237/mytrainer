@@ -6,22 +6,40 @@
     width: 17rem;
 }
 
-/* @media screen and (max-width: 575.98px) {
-    p{
-        font-size: 1rem;
+@media screen and (max-width: 575.98px) {
+    #courseTitle{
+        font-size: .9rem;
+    }
+    #courseName{
+        font-size: .9rem;
+    }
+    #trainerQuali{
+        font-size: .9rem;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.95px){
-    p{
-        font-size: 1rem;
+    #courseTitle{
+        font-size: .9rem;
+    }
+    #courseName{
+        font-size: .9rem;
+    }
+    #trainerQuali{
+        font-size: .9rem;
     }
 }
 
 @media screen and (min-width: 768px) {
-    p{
+    #courseTitle{
         font-size: 1rem;
     }
-} */
+    #courseName{
+        font-size: 1rem;
+    }
+    #trainerQuali{
+        font-size: 1rem;
+    }
+}
 
 
